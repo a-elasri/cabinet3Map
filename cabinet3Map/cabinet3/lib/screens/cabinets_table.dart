@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:cabinet3/constants/cabinets.dart';
 
 import '../helpers/shared_prefs.dart';
+import '../requests/globals.dart';
 
 class CabinetsTable extends StatefulWidget {
   const CabinetsTable({Key? key}) : super(key: key);
@@ -81,7 +82,7 @@ class _CabinetsTableState extends State<CabinetsTable> {
                               height: 175,
                               width: 140,
                               fit: BoxFit.cover,
-                              imageUrl: cabinets[index]['image'],
+                              imageUrl: cabinets[index].image,
                             ),
                             Expanded(
                               child: Container(
@@ -91,12 +92,12 @@ class _CabinetsTableState extends State<CabinetsTable> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      cabinets[index]['name'],
+                                      cabinets[index].name,
                                       style: const TextStyle(
                                           fontWeight: FontWeight.bold,
-                                          fontSize: 16),
+                                          fontSize: 12),
                                     ),
-                                    Text(cabinets[index]['adresse']),
+                                    Text(cabinets[index].adresse),
                                     //const Spacer(),
                                     const Text('Waiting time: 2hrs'),
                                     Text(

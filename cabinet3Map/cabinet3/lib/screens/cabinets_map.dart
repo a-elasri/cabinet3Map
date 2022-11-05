@@ -6,6 +6,7 @@ import 'package:mapbox_gl/mapbox_gl.dart';
 import '../constants/cabinets.dart';
 import '../helpers/commons.dart';
 import '../helpers/shared_prefs.dart';
+import '../requests/globals.dart';
 import '../widgets/carousel_card.dart';
 
 class CabinetsMap extends StatefulWidget {
